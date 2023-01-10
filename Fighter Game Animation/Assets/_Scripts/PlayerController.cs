@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
 
     public bool Dead => _dead;
 
-
+    private PlayerInput pi;
 
 
     #region AnimationParamNames
@@ -52,6 +52,7 @@ public class PlayerController : MonoBehaviour
     {
         _animator = GetComponent<Animator>();
         _id = _playercount++;
+        pi = GetComponent<PlayerInput>();
     }
 
     public void SetOtherPlayer(Transform other)
@@ -62,7 +63,10 @@ public class PlayerController : MonoBehaviour
     public void TryHighQuickAttack()
     {
         if (CanAttack)
+        {
             _animator.SetTrigger(ATTACK_HIGH_QUICK);
+        }
+            
     }
     public void TryHighSlowAttack()
     {

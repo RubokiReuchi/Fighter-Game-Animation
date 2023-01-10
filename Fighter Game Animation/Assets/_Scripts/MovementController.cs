@@ -47,7 +47,14 @@ public class MovementController : MonoBehaviour
         if (CanMove(speed))
         {       
             _animator.SetFloat(SPEED, _id == 1 ? -speed : speed);
-            transform.Translate(0, 0, speed * 0.005f);
+            if (gameObject.name == "elf_model Variant(Clone)")
+            {
+                transform.Translate(0, 0, speed * 0.005f);
+            }
+            else
+            {
+                transform.Translate(0, 0, -speed * 0.005f);
+            }
         }
             
         else
