@@ -191,11 +191,33 @@
                 },
                 {
                     "name": "",
+                    "id": "d030ce5f-8ccd-4fd8-b29d-4a0a15cf245b",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "d088d5e6-fdad-43c7-9b18-2be1f5c982aa",
                     "path": "<Keyboard>/g",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
+                    "action": "QuickHeavyAttack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "28349af2-7b14-47e8-ab0e-e43d14052d6f",
+                    "path": "<Gamepad>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
                     "action": "QuickHeavyAttack",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -213,11 +235,33 @@
                 },
                 {
                     "name": "",
+                    "id": "130c0116-4799-4356-be49-4dd40d3b0565",
+                    "path": "<Gamepad>/leftShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "QuickSoftAttack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "a361c3cb-34ef-497e-bc1a-c96f42ddd96a",
                     "path": "<Keyboard>/k",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
+                    "action": "SlowSoftAttack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4ba18617-0493-45b3-a241-755de0eb76e5",
+                    "path": "<Gamepad>/leftTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
                     "action": "SlowSoftAttack",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -235,11 +279,33 @@
                 },
                 {
                     "name": "",
+                    "id": "15e842ef-93c9-40c5-80a9-a84b7c71f053",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Crouch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "ddff2377-e1c4-4647-bcd1-14c4f92efeb7",
                     "path": "<Keyboard>/h",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
+                    "action": "SlowHeavyAttack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a5451efc-864c-4766-bbb0-a08d92448d7e",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
                     "action": "SlowHeavyAttack",
                     "isComposite": false,
                     "isPartOfComposite": false

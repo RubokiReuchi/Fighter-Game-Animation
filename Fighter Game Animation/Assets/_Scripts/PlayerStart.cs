@@ -26,8 +26,6 @@ public class PlayerStart : MonoBehaviour
         OnPlayerAddedAnswer -= ListenToAnswer;
     }
 
-   
-
     private void ListenToAdded(PlayerStart other)
     {
         if (other != this)

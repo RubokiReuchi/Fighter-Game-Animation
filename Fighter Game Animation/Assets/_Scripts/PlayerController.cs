@@ -59,20 +59,6 @@ public class PlayerController : MonoBehaviour
         _otherPlayer = other;
     }
 
-    internal void SetAtacking(bool value, UpDown upDown)
-    {
-        _isAttacking = value;
-        UpOrDown = upDown;
-    }
-
-   
-
-    internal void SetBlocking(bool value, UpDown upDown)
-    {
-        _isBlocking = value;
-        UpOrDown = upDown;
-    }
-
     public void TryHighQuickAttack()
     {
         if (CanAttack)
@@ -118,11 +104,7 @@ public class PlayerController : MonoBehaviour
                 hitBy.Win();
                 Instantiate(ImpactPrefab, hit.position, Quaternion.identity);
             }
-            
         }
-        
-
-        
     }
 
     private void Die()

@@ -14,7 +14,7 @@ public class PlayerInput : MonoBehaviour
 
     private PlayerController _controller;
     private MovementController _moveController;
-    private Animator _animator;
+    [HideInInspector] public Animator _animator;
 
     private float _speed;
     [HideInInspector] public bool attacking = false;
@@ -45,11 +45,15 @@ public class PlayerInput : MonoBehaviour
         {
             head_col.SetActive(false);
             body_col.SetActive(false);
+            left_arm_col.SetActive(false);
+            right_arm_col.SetActive(false);
         }
         else
         {
             head_col.SetActive(true);
             body_col.SetActive(true);
+            left_arm_col.SetActive(true);
+            right_arm_col.SetActive(true);
         }
 
 
@@ -93,7 +97,8 @@ public class PlayerInput : MonoBehaviour
         }
 
         // check if attaking
-        if (left_arm_col.CompareTag("Attack") || right_arm_col.CompareTag("Attack") || left_leg_col.CompareTag("Attack") || right_leg_col.CompareTag("Attack"))
+        if (left_arm_col.CompareTag("Attack") || right_arm_col.CompareTag("Attack") || left_leg_col.CompareTag("Attack") || right_leg_col.CompareTag("Attack")
+            || !left_leg_col.activeSelf || !head_col.activeSelf)
         {
             attacking = true;
         }
@@ -131,5 +136,10 @@ public class PlayerInput : MonoBehaviour
     private void OnCrouch()
     {
         if (!attacking) _controller.TryLowBlock();
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        
     }
 }
