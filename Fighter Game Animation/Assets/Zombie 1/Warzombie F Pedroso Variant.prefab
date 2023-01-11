@@ -413,6 +413,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Warzombie F Pedroso Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2f557cbc6dab1744b8988f9d0bbda89c, type: 3}
+      propertyPath: m_TagString
+      value: Zombie
+      objectReference: {fileID: 0}
     - target: {fileID: 1974243983493711947, guid: 2f557cbc6dab1744b8988f9d0bbda89c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -546,6 +550,7 @@ MonoBehaviour:
   right_leg_col: {fileID: 7264339797641553636}
   head_col: {fileID: 3398009318646653334}
   body_col1: {fileID: 3792486948756613751}
+  state: 0
   _animator: {fileID: 0}
   attacking: 0
 --- !u!114 &8644282628642848922

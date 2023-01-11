@@ -85,11 +85,13 @@ public class MovementController : MonoBehaviour
         if (transform.position.x <= MoveLimits.x)
             return false;
 
-        if (_otherPlayer == null)
-            return true;
-
-        if (_id == 1 && transform.position.x <= (_otherPlayer.position.x + SafetyDistance))
-            return false;
+        if (gameObject.CompareTag("Zombie"))
+        {
+            if (this.transform.position.x - 1.0f <= GameObject.FindGameObjectWithTag("Elf").transform.position.x)
+            {
+                return false;
+            }
+        }
 
         return true;
     }
@@ -98,11 +100,13 @@ public class MovementController : MonoBehaviour
         if (transform.position.x >= MoveLimits.y)
             return false;
 
-        if (_otherPlayer == null)
-            return true;
-
-        if (_id == 0 && transform.position.x >= (_otherPlayer.position.x - SafetyDistance))
-            return false;
+        if (gameObject.CompareTag("Elf"))
+        {
+            if (this.transform.position.x + 1.0f >= GameObject.FindGameObjectWithTag("Zombie").transform.position.x)
+            {
+                return false;
+            }
+        }
 
         return true;
     }

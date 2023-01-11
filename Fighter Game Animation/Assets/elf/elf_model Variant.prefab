@@ -429,6 +429,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: elf_model Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 09480fd2d0ca4a94a86428a60ff8f546, type: 3}
+      propertyPath: m_TagString
+      value: Elf
+      objectReference: {fileID: 0}
     - target: {fileID: 4454131837636134860, guid: 09480fd2d0ca4a94a86428a60ff8f546, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.46739963
@@ -530,6 +534,7 @@ MonoBehaviour:
   right_leg_col: {fileID: 1427830458945788515}
   head_col: {fileID: 8595058750196681696}
   body_col1: {fileID: 1982177486420423377}
+  state: 0
   _animator: {fileID: 0}
   attacking: 0
 --- !u!114 &1801100587

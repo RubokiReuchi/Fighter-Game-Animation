@@ -54,7 +54,7 @@ public class PlayerInput : MonoBehaviour
         if (!attacking && !state)
         {
             _controller.TryLowQuickAttack();
-            if (gameObject.name == "elf_model Variant(Clone)")
+            if (gameObject.CompareTag("Elf"))
             {
                 right_arm_col.tag = "Attack";
                 StartCoroutine("WaitUntilAnimEnds", 0.667f);
@@ -71,7 +71,7 @@ public class PlayerInput : MonoBehaviour
         if (!attacking && !state)
         {
             _controller.TryHighQuickAttack();
-            if (gameObject.name == "elf_model Variant(Clone)")
+            if (gameObject.CompareTag("Elf"))
             {
                 left_arm_col.tag = "Attack";
                 StartCoroutine("WaitUntilAnimEnds", 0.667f);
@@ -88,7 +88,7 @@ public class PlayerInput : MonoBehaviour
         if (!attacking && !state)
         {
             _controller.TryLowSlowAttack();
-            if (gameObject.name == "elf_model Variant(Clone)")
+            if (gameObject.CompareTag("Elf"))
             {
                 left_leg_col.tag = "Attack";
                 right_leg_col.tag = "Attack";
@@ -107,7 +107,7 @@ public class PlayerInput : MonoBehaviour
         if (!attacking && !state)
         {
             _controller.TryHighSlowAttack();
-            if (gameObject.name == "elf_model Variant(Clone)")
+            if (gameObject.CompareTag("Elf"))
             {
                 right_leg_col.tag = "Attack";
                 StartCoroutine("WaitUntilAnimEnds", 1.0f);
@@ -125,7 +125,7 @@ public class PlayerInput : MonoBehaviour
         if (!attacking && !state)
         {
             _controller.TryHighBlock();
-            if (gameObject.name == "elf_model Variant(Clone)")
+            if (gameObject.CompareTag("Elf"))
             {
                 left_leg_col.SetActive(false);
                 right_leg_col.SetActive(false);
@@ -144,7 +144,7 @@ public class PlayerInput : MonoBehaviour
         if (!attacking && !state)
         {
             _controller.TryLowBlock();
-            if (gameObject.name == "elf_model Variant(Clone)")
+            if (gameObject.CompareTag("Elf"))
             {
                 head_col.SetActive(false);
                 body_col1.SetActive(false);
