@@ -1,3 +1,3 @@
 # Fighter-Game-Animation
-### Elf Animations: RubokiRueuchi
+### Elf Animations: RubokiReuchi
 ### Zombi animations: zapper163
